@@ -1,0 +1,138 @@
+# def get_names():
+#     '''
+#     Complete code below
+#     '''
+#     name = input("Input your First Name : ")
+#     surname = input("Input your Last Name : ")
+#     print(surname, end=' ')
+#     print(name)
+
+# if (__name__ == "__main__"):
+#     range_list = [2,6,21,6,8,4,2,8,8,51,23,12,8,3,45,65,88,78]
+#     get_names()
+# def max_min(data):
+#     '''
+#     Complete code below
+#     '''
+#     return max_number(data), min_number(data)
+
+# def max_number(list_):
+#     j = 1
+#     for i, value in enumerate(list_):
+#         if (i == len(list_)):
+#             break
+#         if (value < int(list_[i+1])):
+#             tmp = int(value)
+#             value = int(list_[i+1])
+#             list_[i+1] = tmp
+#     return list_[i]
+
+# def min_number(list_):
+#     j = 1
+#     for i, value in enumerate(list_):
+#         if (i == len(list_)):
+#             break
+#         if (value > int(list_[i+1])):
+#             tmp = int(value)
+#             value = int(list_[i+1])
+#             list_[i+1] = tmp
+#     return list_[i]
+
+
+# _list = [386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345, 
+#     399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217, 
+#     815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717, 
+#     958,743, 527]
+
+# def output_numbers(numbers):
+#     '''
+#     Complete code below
+#     '''
+#     for n in numbers:
+#         if (int(n)%2==0):
+#             print(n)
+#         elif (int(n)==237):
+#             break
+#         else:
+#             pass
+
+# def list_count_8(nums):
+#     '''
+#     Complete code below
+#     '''
+#     count = 0
+#     for x in nums:
+#         if (int(x) == 8):
+#             count = count + 1
+#     return count
+
+
+
+
+# sn1 = {1,2,3,4,5}
+# sn2 = {4,5,6,7,8}
+# print("Original sets:")
+# print(sn1)
+# print(sn2)
+# print("Difference of sn1 and sn2 using difference():")
+# print(sn1.difference(sn2))
+# print("Difference of sn2 and sn1 using difference():")
+# print(sn2.difference(sn1))
+# print("Difference of sn1 and sn2 using - operator:")
+# print(sn1-sn2)
+# print("Difference of sn2 and sn1 using - operator:")
+# print(sn2-sn1)
+
+
+
+# sn1 = {1,2,3,4,5}
+# sn2 = {4,5,6,7,8}
+# print("Original sets:")
+# print(sn1)
+# print(sn2)
+# print("Difference of sn1 and sn2 using difference():")
+# print(sn1.difference(sn2))
+# print("Difference of sn2 and sn1 using difference():")
+# print(sn2.difference(sn1))
+# print("Difference of sn1 and sn2 using - operator:")
+# print(sn1-sn2)
+# print("Difference of sn2 and sn1 using - operator:")
+# print(sn2-sn1)
+
+# sampleSet = {"Yellow", "Orange", "Black"}
+# sampleSet.add("Blue")
+# sampleSet.add("Orange")
+# print(sampleSet)
+
+# def fizzbuzz(list_):
+#     '''
+#     Complete code below
+#     '''
+#     for n in list_:
+#         if (int(n)%3 == 0 and int(n)%5 == 0):
+#             print('fizzbuzz')
+#         elif (int(n)%3 == 0):
+#             print('fizz')
+#         elif (int(n)%5 == 0):
+#             print('buzz')
+#         else:
+#             print(int(n))
+
+# waterpolo = ["Bradley", "Zinhle", "Polly", "Zack", "Sibonelo", "Veronica", "Tshedza"]
+# athletics = ["Sibonelo", "Kaylee", "Davee", "Zinhle", "Archie", "Betty", "Jughead"]
+# count_water = waterpolo.count(0::)
+
+# print(count_water, count())
+
+if __name__ == '__main__':
+    students_grade = []
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        students_grade.append([name,score])
+        sorted_scores = sorted(list(set([x[1] for x in students_grade])))
+second_lowest = sorted_scores[1]
+
+low_final_list =[]
+for student in students_grade:
+    if second_lowest == students_grade
